@@ -7,6 +7,9 @@ public class Invaders : MonoBehaviour
     private float waitTime = 3.0f;
     private float speed = 0.1f;
     private int step = 0;
+    
+    public GameObject bullet;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();  
@@ -35,6 +38,13 @@ public class Invaders : MonoBehaviour
             pos.y -= 0.1f;
             transform.position = pos;
             step = 0;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D coll){
+        if (coll.collider.CompareTag("Bullet")){
+            Destroy(coll.gameObject);
+            Destroy(gameObject);
         }
     }
 }
