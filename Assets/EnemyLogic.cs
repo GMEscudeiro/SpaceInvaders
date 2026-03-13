@@ -16,7 +16,12 @@ public class EnemyLogic : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        createEnemies();
+    }
+
+    void createEnemies(){
         float initialPos = -3.0f;
+
         for(int i=0; i < numberOfRows; i++){
             rows.Add(Instantiate(enemyRow, new Vector3(initialPos, -0.5f, 0), Quaternion.identity));
             initialPos += 0.8f;

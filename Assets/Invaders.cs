@@ -45,6 +45,7 @@ public class Invaders : MonoBehaviour
         if (coll.collider.CompareTag("Bullet")){
             Destroy(coll.gameObject);
             Destroy(gameObject);
+            GameManager.Score("common");
         }
     }
 }
