@@ -9,6 +9,7 @@ public class Invaders : MonoBehaviour
     private int step = 0;
     
     public GameObject bullet;
+    private GameObject enemyLogic;
 
     void Start()
     {
@@ -16,6 +17,8 @@ public class Invaders : MonoBehaviour
         var vel = rb2d.linearVelocity;
         vel.x = speed;
         rb2d.linearVelocity = vel;
+
+        enemyLogic = GameObject.FindGameObjectWithTag("Enemis");
     }
 
     // Update is called once per frame
@@ -46,6 +49,7 @@ public class Invaders : MonoBehaviour
             Destroy(coll.gameObject);
             Destroy(gameObject);
             GameManager.Score("common");
+            enemyLogic.SendMessage("EnemyKilled", null, SendMessageOptions.RequireReceiver);
         }
     }
 }

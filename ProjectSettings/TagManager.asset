@@ -9,6 +9,7 @@ TagManager:
   - EnemyBullet
   - Wall
   - Enemis
+  - Mothership
   layers:
   - Default
   - TransparentFX

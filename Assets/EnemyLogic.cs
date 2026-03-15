@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class EnemyLogic : MonoBehaviour
@@ -11,7 +12,12 @@ public class EnemyLogic : MonoBehaviour
     private float timer = 0.0f;
     public float waitTime = 1.0f;
 
+    public GameObject mothership;
+    private float motherShipTimer = 0.0f;
+    public float motherShipTime = 30.0f;
+
     public GameObject bullet;
+    private int numberOfEnemies = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,7 +31,12 @@ public class EnemyLogic : MonoBehaviour
         for(int i=0; i < numberOfRows; i++){
             rows.Add(Instantiate(enemyRow, new Vector3(initialPos, -0.5f, 0), Quaternion.identity));
             initialPos += 0.8f;
+            numberOfEnemies += enemyRow.transform.childCount;
         }
+    }
+
+    void EnemyKilled(){
+        numberOfEnemies--;
     }
 
     GameObject getFirstInRow(GameObject row){
@@ -50,6 +61,20 @@ public class EnemyLogic : MonoBehaviour
             }
             timer = 0.0f;
         }
+
+        motherShipTimer += Time.deltaTime;
+        if(motherShipTimer >= motherShipTime){
+            float chance = Random.Range(0.0f,1.0f);
+            if(chance >= 0.5f){
+                Instantiate(mothership, new Vector3(-4.0f, 3.0f, 0), Quaternion.identity);
+            }
+            motherShipTimer = 0.0f; 
+        }
+
+        if(numberOfEnemies <= 0){
+           SceneManager.LoadScene("GoodEnding");
+        }
+        Debug.Log(numberOfEnemies);
     }
 
     void Shoot(GameObject enemy){

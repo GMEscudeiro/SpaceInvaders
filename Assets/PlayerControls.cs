@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class PlayerControls : MonoBehaviour
@@ -55,6 +56,7 @@ public class PlayerControls : MonoBehaviour
             lives--;
         }
         if(lives <= 0){
+            SceneManager.LoadScene("BadEnding");
             Debug.Log("PERDEU");
         }
     }

@@ -616,6 +616,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1081691436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081691438}
+  - component: {fileID: 1081691437}
+  m_Layer: 0
+  m_Name: SceneManagement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1081691437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081691436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6963423ee82ab8d8a8b4823f1d6a4410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneManagement
+--- !u!4 &1081691438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081691436}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626183140
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,7 +841,7 @@ GameObject:
   - component: {fileID: 2085797206}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: Enemis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -832,6 +876,8 @@ MonoBehaviour:
   enemyRow: {fileID: 7637652762640929716, guid: 6813b01ff5fdf3b19a7e8078938b9bdf, type: 3}
   numberOfRows: 8
   waitTime: 2
+  mothership: {fileID: 5712982839834157483, guid: c7471131763a4e895902a50dba7073f3, type: 3}
+  motherShipTime: 5
   bullet: {fileID: 7613618436091018222, guid: 966e2dc7ade0a5b64bcea62adc571288, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -843,3 +889,4 @@ SceneRoots:
   - {fileID: 2085797205}
   - {fileID: 2073622482}
   - {fileID: 1753269586}
+  - {fileID: 1081691438}
