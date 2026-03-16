@@ -3,7 +3,7 @@ using UnityEngine;
 public class Mothership : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    private float speed = 0.5f;
+    private float speed = 0.6f;
     
     public GameObject bullet;
     private GameObject enemyLogic;

@@ -877,7 +877,7 @@ MonoBehaviour:
   numberOfRows: 8
   waitTime: 2
   mothership: {fileID: 5712982839834157483, guid: c7471131763a4e895902a50dba7073f3, type: 3}
-  motherShipTime: 5
+  motherShipTime: 30
   bullet: {fileID: 7613618436091018222, guid: 966e2dc7ade0a5b64bcea62adc571288, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

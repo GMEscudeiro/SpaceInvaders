@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6963423ee82ab8d8a8b4823f1d6a4410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneManagement
+  finalLayout: {fileID: 11400000, guid: 5f83b6dbb85b348eb9a4f750941c335f, type: 2}
 --- !u!4 &1077471150
 Transform:
   m_ObjectHideFlags: 0

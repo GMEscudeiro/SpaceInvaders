@@ -4,8 +4,8 @@ public class Invaders : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     private float timer = 0.0f;
-    private float waitTime = 3.0f;
-    private float speed = 0.1f;
+    public float waitTime = 3.0f;
+    public float speed = 0.1f;
     private int step = 0;
     
     public GameObject bullet;
@@ -43,6 +43,7 @@ public class Invaders : MonoBehaviour
             step = 0;
         }
     }
+
 
     void OnCollisionEnter2D(Collision2D coll){
         if (coll.collider.CompareTag("Bullet")){

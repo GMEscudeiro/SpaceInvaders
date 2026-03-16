@@ -201,6 +201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba159ed602d3dbd41b0aaeadb4932819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  waitTime: 2
+  speed: 0.2
   bullet: {fileID: 7613618436091018222, guid: 966e2dc7ade0a5b64bcea62adc571288, type: 3}
 --- !u!1 &2983509718047196837
 GameObject:
@@ -403,6 +405,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba159ed602d3dbd41b0aaeadb4932819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Invaders
+  waitTime: 2
+  speed: 0.2
   bullet: {fileID: 7613618436091018222, guid: 966e2dc7ade0a5b64bcea62adc571288, type: 3}
 --- !u!1 &5165716681433719108
 GameObject:
@@ -605,6 +609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba159ed602d3dbd41b0aaeadb4932819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  waitTime: 2
+  speed: 0.2
   bullet: {fileID: 7613618436091018222, guid: 966e2dc7ade0a5b64bcea62adc571288, type: 3}
 --- !u!1 &5684106745800127186
 GameObject:
@@ -807,6 +813,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba159ed602d3dbd41b0aaeadb4932819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  waitTime: 2
+  speed: 0.2
   bullet: {fileID: 7613618436091018222, guid: 966e2dc7ade0a5b64bcea62adc571288, type: 3}
 --- !u!1 &7637652762640929716
 GameObject:
@@ -1045,4 +1053,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba159ed602d3dbd41b0aaeadb4932819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  waitTime: 2
+  speed: 0.2
   bullet: {fileID: 7613618436091018222, guid: 966e2dc7ade0a5b64bcea62adc571288, type: 3}
